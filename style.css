@@ -99,8 +99,9 @@ section h3 {
 }
 
 .project {
-    width: 200px;
-    height: 300px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    min-height: 250px;
     background: #1e1e1e;
     border-radius: 10px;
     overflow: hidden;
@@ -115,6 +116,7 @@ section h3 {
     font-size: large;
     font-weight: bold;
 }
+
 
 .project:hover {
     transform: translateY(-5px);
