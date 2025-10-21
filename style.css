@@ -1,8 +1,14 @@
-/* ==== STYLE GÉNÉRAL ==== */
+/* ==== STYLE GLOBAL ==== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
 }
 
 body {
@@ -11,6 +17,15 @@ body {
     color: #e0e0e0;
     line-height: 1.6;
     transition: background 0.3s, color 0.3s;
+
+    /* Flex pour footer en bas */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
 
 /* ==== NAVBAR ==== */
@@ -94,7 +109,6 @@ section h3 {
 }
 
 /* ==== PROJETS ==== */
-
 .projects-container {
     display: flex;
     justify-content: center;
@@ -121,7 +135,6 @@ section h3 {
     font-size: large;
     font-weight: bold;
 }
-
 
 .project:hover {
     transform: translateY(-5px);
@@ -171,16 +184,6 @@ section h3 {
     text-decoration: underline;
 }
 
-/* ==== FOOTER ==== */
-footer {
-    background: #0a0a0a;
-    color: #aaa;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    border-top: 1px solid #222;
-}
-
 /* ==== SCROLL FLUIDE ==== */
 html {
     scroll-behavior: smooth;
@@ -189,7 +192,6 @@ html {
 /* ==== ALIGNEMENT SECTIONS ==== */
 section {
     scroll-margin-top: 70px;
-    /* Ajuste selon la hauteur de ta nav */
 }
 
 /* ==== RESPONSIVE ==== */
