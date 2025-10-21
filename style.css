@@ -147,6 +147,12 @@ section h3 {
     text-align: center;
 }
 
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
 /* ==== COMPÉTENCES ==== */
 .skills-list {
     display: flex;
